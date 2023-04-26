@@ -6,31 +6,36 @@ body {
 }
 
 /* Your styles here */
-.button, .button-outlined, .button-solid {
-  display: inline-block;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  text-align: center;
-  text-decoration: none;
+.btn-solid {
+  background: #3498db;
+  color: white;
+  border: 0;
+  border-style: solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
+}
+.btn-solid:hover {
+  background: #2383c4;
+}
+.btn-solid:active {
+  background: #16527a;
 }
 
-.button-solid {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+.btn-outline {
+  background: transparent;
+  color: #3498db;
+  border: 2px;
+  border-style: dashed;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
-.button-solid:hover {
-  background-color: #0062cc;
+.btn-outline:hover {
+  background: rgba(0, 0, 0, 0);
 }
-
-.button-outlined {
-  background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
-}
-.button-outlined:hover {
-  background-color: #007bff;
-  color: #fff;
+.btn-outline:active {
+  background: rgba(0, 0, 0, 0);
 }/*# sourceMappingURL=styles.css.map */

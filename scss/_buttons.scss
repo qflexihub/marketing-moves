@@ -1,36 +1,27 @@
-// Button base styles
-.button {
-    display: inline-block;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
+@mixin button($bg, $color, $border: 0, $type: solid) {
+    background: $bg;
+    color: $color;
+    border: $border;
+    border-style: $type;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
-}
-  
-// Solid button styles
-.button-solid {
-    @extend .button;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-  
     &:hover {
-      background-color: darken(#007bff, 10%);
+      background: darken($bg, 8%);
+    }
+    &:active {
+      background: darken($bg, 25%);
     }
 }
   
-// Outlined button styles
-.button-outlined {
-    @extend .button;
-    background-color: transparent;
-    color: #007bff;
-    border: 2px solid #007bff;
+// Example usage for a solid button
+.btn-solid {
+    @include button(#3498db, white);
+}
   
-    &:hover {
-      background-color: #007bff;
-      color: #fff;
-    }
+// Example usage for an outlined button
+.btn-outline {
+    @include button(transparent, #3498db, 2px, dashed);
 }
   
