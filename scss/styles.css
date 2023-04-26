@@ -1,0 +1,36 @@
+/* Define your variables here */
+/* Global styles */
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Your styles here */
+.button, .button-outlined, .button-solid {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-solid {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+.button-solid:hover {
+  background-color: #0062cc;
+}
+
+.button-outlined {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+.button-outlined:hover {
+  background-color: #007bff;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */

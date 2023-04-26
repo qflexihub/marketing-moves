@@ -1,0 +1,36 @@
+// Button base styles
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+// Solid button styles
+.button-solid {
+    @extend .button;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  
+    &:hover {
+      background-color: darken(#007bff, 10%);
+    }
+}
+  
+// Outlined button styles
+.button-outlined {
+    @extend .button;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+  
+    &:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+}
+  
