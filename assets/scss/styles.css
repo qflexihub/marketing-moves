@@ -55,8 +55,9 @@ body {
 /*# sourceMappingURL=styles.css.map */
 
 .page-width {
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 
@@ -71,16 +72,17 @@ a.active {
     font-weight: bold;
 }
 
-.marketing-moves-main-header {
+.desktop-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 nav.navbar ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -110,4 +112,81 @@ nav.navbar ul div.nav-dropdown {
 
 nav.navbar ul li {
     cursor: pointer;
+}
+
+nav.navbar ul li:hover a,
+nav.navbar ul li:hover button {
+    font-weight: bold;
+}
+
+.header-search-bar input {
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    border: none;
+}
+
+.header-search-bar button {
+    position: absolute;
+    background: no-repeat;
+    border: none;
+    color: #0084ff;
+    top: 9px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.header-search-bar {
+    position: relative;
+}
+
+.header-search-bar {
+    width: 17%;
+    text-align: end;
+}
+
+.header-main-logo {
+    width: 10%;
+    text-align: center;
+}
+
+nav.navbar {
+    width: 73%;
+    margin: 0 20px;
+}
+
+.header-mobile-responsive {
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .page-width.main-header {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header-mobile-responsive {
+        display: block;
+    }
+    .desktop-header {
+        display: none;
+    }
+    .header-mobile-responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+    }
+    .header-toggle {
+        width: 10%;
+    }
+    .resposive-header-logo {
+        width: 80%;
+        text-align: center;
+    }
+    .responsive-search-bar {
+        width: 10%;
+    }
 }
