@@ -55,7 +55,7 @@ body {
 /*# sourceMappingURL=styles.css.map */
 
 .page-width {
-    max-width: 1150px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -75,8 +75,8 @@ a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-    gap: 25px;
+    padding: 15px;
+    gap: 15px;
 }
 
 nav.navbar ul {
@@ -86,13 +86,14 @@ nav.navbar ul {
     align-items: center;
 }
 
-nav.navbar ul li a {
+nav.navbar ul li .navbar-content {
     text-decoration: none;
     color: white;
+    position: relative;
 }
 
 header {
-    background: #015899;
+    background: #0084FF;
 }
 
 button.nav-dropdown-btn {
@@ -107,16 +108,17 @@ button.nav-dropdown-btn {
 
 nav.navbar ul li,
 nav.navbar ul div.nav-dropdown {
-    padding: 6px 15px;
+    padding: 15px;
 }
 
 nav.navbar ul li {
     cursor: pointer;
 }
 
-nav.navbar ul li:hover a,
+nav.navbar ul li:hover .navbar-content,
 nav.navbar ul li:hover button {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .header-search-bar input {
@@ -130,11 +132,19 @@ nav.navbar ul li:hover button {
     position: absolute;
     background: no-repeat;
     border: none;
-    color: #0084ff;
+    color: #0084FF;
     top: 10px;
-    left: 150px;
+    right: 10px;
     cursor: pointer;
     font-size: 15px;
+}
+
+button.nav-dropdown-btn i {
+    font-size: 10px;
+    background: #ffffff5c;
+    border-radius: 51px;
+    padding: 4px;
+    margin-left: 7px;
 }
 
 .header-search-bar {
@@ -142,7 +152,7 @@ nav.navbar ul li:hover button {
 }
 
 .header-search-bar {
-    width: 17%;
+    width: 25%;
     text-align: end;
 }
 
@@ -152,11 +162,56 @@ nav.navbar ul li:hover button {
 }
 
 nav.navbar {
-    width: 73%;
+    width: 65%;
 }
 
 .header-mobile-responsive {
     display: none;
+}
+
+
+/* header hover  */
+
+.nav-dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    background: white;
+    border-radius: 9px;
+    padding: 25px;
+    position: absolute;
+    top: 48px;
+}
+
+a.dropdown-content:hover {
+    background: #397efe17;
+}
+
+a.dropdown-content {
+    width: 45%;
+    color: black !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px;
+}
+
+.nav-dropdown-content {
+    display: none;
+}
+
+li.nav-dropdown:hover .nav-dropdown-content {
+    display: flex;
+}
+
+li.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-content .active {
+    color: #0084FF !important;
+    font-weight: bold;
 }
 
 
@@ -165,11 +220,12 @@ nav.navbar {
 .page-width.main-footer {
     display: flex;
     justify-content: space-between;
-    padding: 55px 0;
+    padding: 55px 20px;
+    flex-wrap: wrap;
 }
 
 footer {
-    background: #015899;
+    background: #0084FF;
     ;
 }
 
@@ -236,6 +292,7 @@ footer {
 
 .footer-container-b.footer-weekly-newslatter ul li {
     padding: 8px 0;
+    cursor: pointer;
 }
 
 .footer-container-c p {
@@ -258,10 +315,12 @@ footer {
 .footer-mail-input button {
     position: absolute;
     top: 0px;
-    right: -19px;
+    /* right: -19px; */
     height: 100%;
     padding: 0 12px;
     border-radius: 4px;
+    background: white;
+    border: none;
 }
 
 .footer-website-detail.page-width {
@@ -272,7 +331,7 @@ footer {
 
 .footer-website-detail-a,
 .footer-website-detail-b {
-    width: 50%;
+    width: 48%;
 }
 
 .footer-website-detail-a,
@@ -297,7 +356,7 @@ footer {
 }
 
 .main-footer-website-detail {
-    padding: 50px 0;
+    padding: 50px 20px;
     border-top: 2px solid wheat;
 }
 
@@ -316,15 +375,29 @@ footer {
     color: white;
 }
 
-@media only screen and (max-width:1200px) {
-    .page-width.main-header {
-        width: 1000px;
-    }
+.footer-website-detail-b ul li a:hover {
+    color: white;
 }
 
-@media only screen and (max-width: 1024px) {
-    .page-width.main-header {
-        width: 800px;
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 992px) {
+    .footer-container-a {
+        width: 50%;
+    }
+    .footer-container-b {
+        width: 50%;
+    }
+    .footer-container-c {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .footer-website-detail-a,
+    .footer-website-detail-a a {
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -354,4 +427,13 @@ footer {
     .page-width.main-header {
         max-width: 100%;
     }
+    /* .footer-container-c.footer-weekly-newslatter {
+        display: none;
+    }
+    .footer-container-a {
+        width: 100%;
+    }
+    .footer-container-b {
+        width: 100%;
+    } */
 }
