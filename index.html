@@ -370,20 +370,20 @@
             </div>
         </section>
         <section class="fifth-section">
-            <div class="fifth-section-main-container">
-                <div class="heading-navbar">
+            <div class="page-width fifth-section-main-container">
+                <div class="fifth-section-heading-navbar">
                     <h2>Latest News</h2>
                     <nav>
                         <ul>
-                            <li><a href="">ALL</a></li>
-                            <li><a href="">Nutrition</a></li>
-                            <li><a href="">Health</a></li>
-                            <li><a href="">Technology</a></li>
-                            <li><a href="">World</a></li>
-                            <li><a href="">Politics</a></li>
-                            <li><a href="">Entertainment</a></li>
-                            <li><a href="">History</a></li>
-                            <li><a href="">Sports</a></li>
+                            <li><a class="fifth-section-heading-navbar-link active" href="">ALL</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">Nutrition</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">Health</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">Technology</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">World</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">Politics</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">Entertainment</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">History</a></li>
+                            <li><a class="fifth-section-heading-navbar-link" href="">Sports</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -394,7 +394,7 @@
                                 <img src="assets/img/image-D.png" alt="">
                             </div>
                             <div class="latest-news-main-container-a-main-news-text">
-                                <h5>POLITICS</h5>
+                                <h4>POLITICS</h4>
                                 <P>Govt seeks to boost micro-insurance coverage with three-month campaign | Mint</P>
                             </div>
                         </div>
@@ -434,7 +434,7 @@
             </div>
         </section>
         <section class="sixth-container">
-            <div class="fifth-section-fresh-content">
+            <div class="page-width fifth-section-fresh-content">
                 <h2></h2>
                 <div class="fresh-content-main-container">
                     <div class="fresh-content-main-container-content">
@@ -478,6 +478,49 @@
         </section>
         <section class="seventh-section">
             <div class="seventh-section-main-container">
+                <h2>Startup New</h2>
+                <div class="startup-new-with-slider">
+                    <div class="startup-new-with-slider-content">
+                        <div class="startup-new-with-slider-content-image">
+                            <img src="assets/img/image-13.png" alt="">
+                        </div>
+                        <div class="startup-new-with-slider-content-text">
+                            <button class="btn btn-solid">nutrition</button>
+                            <p>Which is better for you health: walking or running?</p>
+                        </div>
+                    </div>
+                    <div class="startup-new-with-slider-content">
+                        <div class="startup-new-with-slider-content-image">
+                            <img src="assets/img/image-13(1).png" alt="">
+                        </div>
+                        <div class="startup-new-with-slider-content-text">
+                            <button class="btn btn-solid">World</button>
+                            <p>Which is better for you health: walking or running?</p>
+                        </div>
+                    </div>
+                    <div class="startup-new-with-slider-content">
+                        <div class="startup-new-with-slider-content-image">
+                            <img src="assets/img/image-13(2).png" alt="">
+                        </div>
+                        <div class="startup-new-with-slider-content-text">
+                            <button class="btn btn-solid">Entertainment</button>
+                            <p>Which is better for you health: walking or running?</p>
+                        </div>
+                    </div>
+                    <div class="startup-new-with-slider-content">
+                        <div class="campaign-coverage-with-slider-content-image">
+                            <img src="assets/img/image-13(2).png" alt="">
+                        </div>
+                        <div class="startup-new-with-slider-content-text">
+                            <button class="btn btn-solid">Click me</button>
+                            <p>Which is better for you health: walking or running?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eighth-section">
+            <div class="page width eight-section-main-container">
                 <h2>Startup New</h2>
                 <div class="startup-new-with-slider">
                     <div class="startup-new-with-slider-content">
@@ -579,7 +622,8 @@
             $('.image-banner-with-slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                arrows: true,
+                nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><i class="fa-solid fa-angle-right"></i></div>',
+                prevArrow: '<div class="slick-custom-arrow slick-custom-arrow-left"><i class="fa-solid fa-angle-left"></i></div>',
                 dots: false,
                 speed: 2000,
                 infinite: true,
