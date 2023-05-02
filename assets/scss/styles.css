@@ -534,6 +534,8 @@ img.image-banner-with-text-a-img {
     background: white;
     margin-right: 17px;
     border-radius: 12px;
+    box-shadow: 0 0 10px #ddd;
+    border: 1px solid #80808045;
 }
 
 .campaign-coverage-with-slider-content-text button {
@@ -882,6 +884,11 @@ a.fifth-section-heading-navbar-link.active {
     align-items: end;
 }
 
+.startup-new-with-slider-content-image {
+    border: 1px solid #80808045;
+    border-radius: 10px;
+}
+
 .startup-new-with-slider-content-image img {
     width: 100%;
     object-fit: cover;
@@ -1068,6 +1075,7 @@ a.fifth-section-heading-navbar-link.active {
     display: flex;
     justify-content: space-between;
     padding: 55px 20px;
+    padding-top: 200px;
     flex-wrap: wrap;
 }
 
