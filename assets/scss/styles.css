@@ -17,9 +17,10 @@ body {
     border: 0;
     border-style: solid;
     padding: 13px 20px 13px 20px;
-    border-radius: 7px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .btn-solid:hover {
@@ -301,6 +302,16 @@ img.image-banner-with-text-a-img {
     object-fit: cover;
 }
 
+.image-banner-with-slider {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+.image-banner-with-slider-content {
+    width: 33.33%;
+}
+
 .image-banner-with-slider-content-image img {
     object-fit: contain;
     width: 100%;
@@ -308,7 +319,7 @@ img.image-banner-with-text-a-img {
 
 .image-banner-with-slider-content-image,
 .image-banner-with-slider-content-text {
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .image-banner-with-slider-content-text p {
@@ -381,6 +392,32 @@ img.image-banner-with-text-a-img {
     color: #0084FF;
     font-size: 28px;
     opacity: 1;
+}
+
+.image-banner-with-slider .slick-custom-arrow-left {
+    position: absolute;
+    top: 26%;
+    background: white;
+    color: #0084FF;
+    z-index: 1;
+    padding: 8px 14px;
+    border-radius: 29px;
+    left: -21px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.image-banner-with-slider .slick-custom-arrow-right {
+    position: absolute;
+    top: 26%;
+    background: white;
+    color: #0084FF;
+    z-index: 1;
+    padding: 8px 14px;
+    border-radius: 29px;
+    right: -4px;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 
@@ -740,7 +777,7 @@ a.fifth-section-heading-navbar-link.active {
     margin-top: 5px;
 }
 
-.page-width.sixth-section-fresh-content {
+.sixth-section-fresh-content {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px #ddd;
@@ -901,6 +938,10 @@ a.fifth-section-heading-navbar-link.active {
     color: #0084FF;
 }
 
+.startup-new-with-slider-content-text button {
+    margin: 12px 0;
+}
+
 
 /* eight section  */
 
@@ -995,6 +1036,29 @@ a.fifth-section-heading-navbar-link.active {
     line-height: 1;
     opacity: .75;
     color: #0084FF;
+}
+
+.international-with-slider-content {
+    position: relative;
+}
+
+.international-with-slider-content-text {
+    position: absolute;
+    z-index: 8;
+    bottom: 35px;
+    left: 25px;
+}
+
+.international-with-slider-content-text p {
+    color: white;
+    font-size: 23px;
+    width: 75%;
+    margin-top: 12px;
+}
+
+.international-with-slider-content-image img {
+    filter: brightness(0.5);
+    border-radius: 15px;
 }
 
 
@@ -1320,6 +1384,14 @@ footer {
     }
     .fresh-content-main-container-content-box {
         width: 50%;
+    }
+    .second-section-main-container {
+        border-radius: 0;
+        margin-left: 0;
+    }
+    .fourth-section-main-container {
+        border-radius: 0;
+        margin-right: 0;
     }
 }
 
