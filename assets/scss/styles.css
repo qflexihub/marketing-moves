@@ -249,6 +249,7 @@ a#responsive-cross-icon {
     position: absolute;
     right: 0;
     margin-right: 5%;
+    top: 36%;
 }
 
 a#responsive-cross-icon i {
@@ -270,6 +271,24 @@ a#responsive-cross-icon i {
 
 .responsive-header-search-bar-box button i {
     color: #0084FF;
+}
+
+.responsive-header-search-bar-box-email button {
+    position: absolute;
+    right: 12px;
+}
+
+.responsive-header-search-bar-box-email input {
+    width: 100%;
+}
+
+.responsive-header-search-bar-box-email {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    margin: auto;
+    position: relative;
+    align-items: center;
 }
 
 
@@ -501,7 +520,7 @@ img.image-banner-with-text-a-img {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     align-items: end;
 }
 
@@ -917,6 +936,25 @@ a.fifth-section-heading-navbar-link.active {
 .fresh-content-main-container-content-box-newslatter-email p {
     font-weight: bold;
     font-size: 14px;
+}
+
+.fresh-content-main-container-content-box-newslatter-mail {
+    position: relative;
+    width: 80%;
+    align-self: center;
+    display: flex;
+}
+
+.fresh-content-main-container-content-box-newslatter-mail input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.fresh-content-main-container-content-box-newslatter-mail button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
 }
 
 
@@ -1391,6 +1429,9 @@ footer {
 }
 
 @media only screen and (max-width:768px) {
+    .fresh-content-main-container-content-box-img-text {
+        margin: auto;
+    }
     .header-mobile-responsive {
         display: block;
     }
@@ -1517,6 +1558,9 @@ footer {
     .event-with-slider .slick-prev {
         left: 88%;
     }
+    .campaign-coverage-with-slider .slick-prev {
+        left: 88%;
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -1602,6 +1646,9 @@ footer {
     .event-with-slider .slick-prev {
         left: 86%;
     }
+    .campaign-coverage-with-slider .slick-prev {
+        left: 86%;
+    }
 }
 
 @media only screen and (max-width:425px) {
@@ -1621,6 +1668,9 @@ footer {
         left: 80%;
     }
     .event-with-slider .slick-prev {
+        left: 80%;
+    }
+    .campaign-coverage-with-slider .slick-prev {
         left: 80%;
     }
 }
@@ -1662,6 +1712,9 @@ footer {
         left: 77%;
     }
     .event-with-slider .slick-prev {
+        left: 77%;
+    }
+    .campaign-coverage-with-slider .slick-prev {
         left: 77%;
     }
 }
