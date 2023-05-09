@@ -173,6 +173,20 @@
                     <p>Sports</p>
                 </a>
             </div>
+            <div class="nav-dropdown-content-2">
+                <div class="nav-dropdown-content-2-a">
+                    <div class="nav-dropdown-website-detail-b">
+                        <ul>
+                            <li><a href="#">Terms and Conditions </a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact US</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown-website-detail-a">All Rights Reserved 2023 &#169;<a href="#">MarketingMoves.in</a></div>
+
+                </div>
+            </div>
         </div>
         <section class="first-section">
             <div class="page-width">
@@ -824,6 +838,29 @@
             $("#responsive-cross-icon").click(function() {
                 $("#responsive-search-icon-open").hide();
             });
+        });
+
+
+
+
+        $(document).ready(function() {
+            $(".header-toggle").click(function() {
+                $(".toggle-open").animate({
+                    width: "toggle"
+                });
+
+                if ($("body").hasClass("menu-main-body")) {
+                    $("body").removeClass("menu-main-body");
+                } else {
+                    $("body").addClass("menu-main-body");
+                }
+            });
+            // $(".header-toggle").click(function() {
+            //     $(".hamburger-left-button").animate({
+            //         width: "toggle"
+            //     });
+            //     $(".main-body").removeClass("menu-main-body");
+            // });
         });
     </script>
 </body>

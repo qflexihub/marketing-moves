@@ -279,7 +279,9 @@ a#responsive-cross-icon i {
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 5;
+    height: 90vh;
+    overflow-y: scroll;
     background: #0084FF;
 }
 
@@ -287,10 +289,54 @@ a#responsive-cross-icon i {
     background: white;
     margin-right: 7%;
     border-radius: 0 15px 15px 0;
+    height: 90%;
+    overflow-y: scroll;
 }
 
 main {
     position: relative;
+}
+
+.menu-main-body {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-dropdown-content-1 {
+    height: 70%;
+}
+
+.nav-dropdown-content-2 {
+    height: 30%;
+}
+
+.nav-dropdown-website-detail-b ul {
+    list-style: none;
+}
+
+.nav-dropdown-website-detail-b ul li {
+    margin-bottom: 9px;
+}
+
+.nav-dropdown-website-detail-b ul li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.nav-dropdown-content-2-a {
+    padding: 14px;
+}
+
+.nav-dropdown-website-detail-a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.nav-dropdown-website-detail-a a {
+    color: white;
 }
 
 
