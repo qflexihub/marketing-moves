@@ -616,6 +616,21 @@ img.image-banner-with-text-a-img {
     margin-bottom: 0px;
 }
 
+.trending-now-with-slider .slick-prev {
+    left: 93%;
+    top: -35px;
+}
+
+.trending-now-with-slider .slick-next {
+    right: 2%;
+    top: -35px;
+}
+
+.trending-now-with-slider .slick-next:before,
+.slick-prev:before {
+    font-size: 30px !important;
+}
+
 
 /* third section  */
 
@@ -1596,12 +1611,17 @@ footer {
     .image-banner-with-slider .slick-custom-arrow-left {
         font-size: 18px;
         left: -10px;
+        top: 20%;
     }
     .image-banner-with-slider .slick-custom-arrow-right {
         right: -10px;
         font-size: 18px;
+        top: 20%;
     }
     .event-with-slider .slick-prev {
+        left: 88%;
+    }
+    .trending-now-with-slider .slick-prev {
         left: 88%;
     }
     .campaign-coverage-with-slider .slick-prev {
@@ -1692,6 +1712,9 @@ footer {
     .event-with-slider .slick-prev {
         left: 86%;
     }
+    .trending-now-with-slider .slick-prev {
+        left: 86%;
+    }
     .campaign-coverage-with-slider .slick-prev {
         left: 86%;
     }
@@ -1711,6 +1734,9 @@ footer {
         left: 80%;
     }
     .international-with-slider .slick-prev {
+        left: 80%;
+    }
+    .trending-now-with-slider .slick-prev {
         left: 80%;
     }
     .event-with-slider .slick-prev {
@@ -1758,6 +1784,9 @@ footer {
         left: 77%;
     }
     .event-with-slider .slick-prev {
+        left: 77%;
+    }
+    .trending-now-with-slider .slick-prev {
         left: 77%;
     }
     .campaign-coverage-with-slider .slick-prev {
