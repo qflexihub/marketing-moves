@@ -1,6 +1,7 @@
 /* Define your variables here */
 @import "buttons";
 @import "colors";
+@import "category";
 
 /* Global styles */
 
@@ -11,6 +12,10 @@ body {
 
 html {
     scroll-behavior: smooth
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Your styles here */
@@ -451,7 +456,7 @@ main {
 }
 
 .first-section-column-b-box-a-button {
-    margin-top: 20px;
+    // margin-top: 20px;
 }
 
 .first-section-column-b-box-b {
@@ -547,7 +552,7 @@ img.image-banner-with-text-a-img {
 
 .first-section-column-b-box-a,
 .first-section-column-b-box-b {
-    padding-left: 20px;
+    // padding-left: 20px;
 }
 
 .image-banner-with-text-slider button.slick-prev.slick-arrow {
