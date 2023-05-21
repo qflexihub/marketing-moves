@@ -15,7 +15,7 @@
 .content {
     padding-left: 120px;
     padding-right: 120px;
-    background-color: white;
+    // background-color: white;
 }
 .tag-section {
     padding-top: 8px;
@@ -124,4 +124,12 @@
 .icon-name {
     padding-left: 10px;
     color: white;
+}
+.featured-section {
+    padding: 20px 0;
+}
+.bottom-slider {
+    background-color: transparent;
+    // margin-bottom: -150px;
+    // z-index: 999;
 }
