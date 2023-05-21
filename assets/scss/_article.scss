@@ -15,6 +15,7 @@
 .content {
     padding-left: 120px;
     padding-right: 120px;
+    background-color: white;
 }
 .tag-section {
     padding-top: 8px;
@@ -34,6 +35,12 @@
     color: #000000;
     padding-bottom: 60px;
 }
+.article-section {
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
 .post-content-section {
     width: 70%;
 }
@@ -47,5 +54,74 @@
     font-weight: bold;
     font-size: 96px;
     color: #0084FF;
-    // vertical-align: top;
+}
+.sidebar-right  {
+    width: 30%;
+    margin-left: 40px;
+}
+.square-advertize {
+    width: 100%;
+    height: auto;
+}
+.social-links-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: $grey-color;
+}
+.social-links-user-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.social-links-user-name {
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: bold;
+}
+.divider-line {
+    width: 100%;
+    height: 0px;
+    border: 2px solid #E0E0E0;
+}
+.fb-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #1778F2;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 20px;
+}
+.instagram-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #586BE7 0%, #BB4B9B 50%, #F93745 100%);
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 14px;
+}
+.twitter-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #00ACEE;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 14px;
+}
+.fa-icon {
+    color: white;
+}
+.icon-name {
+    padding-left: 10px;
+    color: white;
 }
