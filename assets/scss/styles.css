@@ -94,6 +94,9 @@
   display: flex;
   text-decoration: none;
   gap: 14px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .article-main-container .block-1 .category-bar ul li {
   font-size: 18px;
@@ -105,6 +108,7 @@
   font-weight: bold;
   list-style: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 .article-main-container .block-1 .category-bar ul li:hover {
   background-color: #0084FF;
