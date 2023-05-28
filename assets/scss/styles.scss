@@ -19,6 +19,10 @@ img {
     max-width: 100%;
 }
 
+input {
+    outline: none;
+}
+
 /* Your styles here */
 
 
@@ -74,13 +78,15 @@ img {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 section h2 {
     margin-bottom: 12px;
     text-transform: uppercase;
     color: #0084FF;
+    font-size: 34px;
+
 }
 
 
@@ -501,6 +507,10 @@ main {
     margin-top: 40px;
 }
 
+.slick-list {
+    border-radius: 10px;
+}
+
 .image-banner-with-text-a {
     position: relative;
     // padding-right: 20px;
@@ -570,6 +580,13 @@ img.image-banner-with-text-a-img {
     top: 87%;
     left: 83%;
     z-index: 1;
+}
+
+.latest-news-main-container-b-img {
+    // width: 40%;
+    max-width: 224px;
+    width: 100%;
+    height: 126px;
 }
 
 .image-banner-with-text-slider button.slick-next.slick-arrow {
@@ -911,6 +928,7 @@ img.image-banner-with-text-a-img {
     color: white;
     padding: 14px;
     border-radius: 9px 9px 0 0;
+    margin-bottom: -1px;
 }
 
 a.fifth-section-heading-navbar-link.active {
@@ -954,6 +972,7 @@ a.fifth-section-heading-navbar-link.active {
 .latest-news-main-container-a-main-news-img,
 .latest-news-main-container-a-main-news-text {
     padding-right: 10px;
+    margin-top: 24px;
 }
 
 .latest-news-main-container-b-image-text {
@@ -967,10 +986,11 @@ a.fifth-section-heading-navbar-link.active {
 .latest-news-main-container-b-text h5 {
     margin-bottom: 9px;
     color: #0084FF;
+    font-size: 14px;
 }
 
 .latest-news-main-container-a-main-news-text h4 {
-    margin: 9px 0;
+    margin: 0px;
     font-size: 17px;
     color: #0084FF;
 }
@@ -978,6 +998,7 @@ a.fifth-section-heading-navbar-link.active {
 .latest-news-main-container-a-main-news-text p {
     font-weight: bold;
     font-size: 24px;
+    margin-top: 12px;
 }
 
 
@@ -1000,22 +1021,27 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .fresh-content-main-container-content-box {
-    width: 15%;
+    // width: 15%;
 }
 
 .fresh-content-main-container-content-box-newslatter {
-    width: 40%;
+    // width: 40%;
     text-align: center;
     text-align-last: start;
+    max-width: 380px;
+    width: 100%;
+
 }
 
 .fresh-content-main-container-content-box-img-text {
-    width: 75%;
     text-align: center;
-}
-
-.fresh-content-main-container-content-box-img-text img {
+    max-width: 150px;
     width: 100%;
+
+    img {
+        width: 100%;
+        height: 150px;
+    }
 }
 
 .fresh-content-main-container-content-box-img-text p {
@@ -1024,9 +1050,13 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .sixth-section-fresh-content {
-    padding: 40px;
+    padding: 58px 40px 47px 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px #ddd;
+
+    h2 {
+        margin-bottom: 54px;
+    }
 }
 
 .fresh-content-main-container-social-media {
@@ -1036,11 +1066,10 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .fresh-content-main-container-social-media-box {
-    width: 25%;
     text-align: center;
     box-shadow: 0 0 10px #ddd;
     border-radius: 11px;
-    padding: 20px 5px;
+    padding: 24px 40px;
     background: white;
 }
 
@@ -1058,11 +1087,13 @@ a.fifth-section-heading-navbar-link.active {
     flex-wrap: wrap;
     margin-bottom: 35px;
     margin-top: 25px;
+    gap: 30px;
 }
 
 .fresh-content-main-container-social-media-immg {
     display: flex;
     margin-top: 12px;
+    gap: 17px;
 }
 
 .fresh-content-main-container-content-box-newslatter-email h4 {
@@ -1092,21 +1123,26 @@ a.fifth-section-heading-navbar-link.active {
 
 .fresh-content-main-container-content-box-newslatter-mail {
     position: relative;
-    width: 80%;
+    width: 100%;
     align-self: center;
     display: flex;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 .fresh-content-main-container-content-box-newslatter-mail input {
     width: 100%;
-    padding: 16px;
+    padding: 12px;
     border-radius: 5px;
+    border: none;
 }
 
 .fresh-content-main-container-content-box-newslatter-mail button {
     position: absolute;
-    top: 3px;
-    right: 3px;
+    top: 7px;
+    right: 10px;
 }
 
 
@@ -1167,7 +1203,8 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .startup-new-with-slider-content-text button {
-    padding: 6px 10px;
+    padding: 13px 20px;
+    text-transform: uppercase;
 }
 
 .startup-new-with-slider-content-text {
@@ -1177,6 +1214,7 @@ a.fifth-section-heading-navbar-link.active {
 
 .startup-new-with-slider-content-text p {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .-with-slider-content-text button {
@@ -1211,7 +1249,8 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .startup-new-with-slider-content-text button {
-    margin: 12px 0;
+    margin-top: 23px;
+    margin-bottom: 11px;
 }
 
 
