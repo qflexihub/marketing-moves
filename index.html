@@ -424,7 +424,10 @@
         </section>
         <section class="second-section" id="trending-now">
             <div class="second-section-main-container">
-                <h2>Trending Now</h2>
+                <div class="trending-block">
+                    <img src="assets/img/trending-arrow.svg" alt="">
+                    <h2>Trending <br /> Now</h2>
+                </div>
                 <div class="trending-now-with-slider">
                     <div class="trending-now-with-slider-content">
                         <div class="trending-now-with-slider-content-image">
@@ -845,7 +848,7 @@
         });
         $(document).ready(function () {
             $('.trending-now-with-slider').slick({
-                slidesToShow: 3,
+                slidesToShow: 3.5,
                 slidesToScroll: 1,
                 arrows: true,
                 dots: false,
