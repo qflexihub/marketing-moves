@@ -1328,7 +1328,7 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .international-with-slider .slick-prev {
-    left: 93%;
+    left: 92%;
     top: -8%;
 }
 
@@ -2039,5 +2039,19 @@ footer {
 
     .campaign-coverage-with-slider .slick-prev {
         left: 77%;
+    }
+}
+.footer {
+    z-index: -1;
+    padding-top: 50px;
+    @media (max-width: 768px){
+        padding-top: 175px;
+    }
+}
+.footer-slider {
+    margin-bottom: -275px;
+    z-index: 999;
+    @media (max-width: 768px){
+        margin-bottom: -225px;
     }
 }
