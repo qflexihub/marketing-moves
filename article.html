@@ -326,26 +326,72 @@
                 <div class="article-section">
                     <div class="post-content-section">
                         <p class="post-content">Elon Musk has joined the bandwagon of billionaires pumping dollars into AI technologies. The 51-year-old has founded a new company, X.AI, according to a report by The Wall Street Journal. Reportedly, the company was incorporated sometime in March based on a Nevada filing accessed by the news outlet. At present, X.AI has Musk as the director and Jared Birchall as its secretary. Incidentally, Birchall is also the director of the technocrat’s family office. Based on the details in public domain, the company was incorporated on March 9. Well, off late, several reports have been speculating Musk’s plan to establish an AI company. One of the reports published by The Business Insider also revealed that the billionaire had invested in thousands of GPU processors from Nvidia reportedly to power an upcoming product backed by generative AI.Meanwhile, another report by The Financial Times suggested that the Tesla chief had plans to create an AI company to rival Sam Altman’s OpenAI which has been backed by Microsoft. For this, it has also been reported that the billionaire sought funding from SpaceX and Tesla investors.</p>
+                        <button class="btn btn-solid read-more-button">Read More</button>
                         <div class="ads-banner">
                             <img class="sq-advertize" src="assets/img/image17.png" />
                             <img class="rect-advertize" src="assets/img/rect_ads_banner.svg" />
                         </div>
-                        <div class="post-sub-content">
-                            <h2>The contradiction</h2>
-                            <p>Interestingly, the latest development comes close at heels with a recent open letter seeking a six-month halt on AI developments that was also signed by Elon Musk along with 1000 other dignitaries. Musk, along with other executives, had sought a halt on developing a more powerful AI than GPT-4, citing risks to society. The development related to Musk’s AI firm comes at a time when Alphabet Inc and Microsoft Corp are scrambling to integrate generative AI technology into their products and services. It also needs to be noted that even as ChatGPT gains wide-ranging use cases, it is also inviting pushback from several nations owing to privacy and a host of other issues.</p>
-                            <img class="feature-img" src="assets/img/image-D.png" />
-                        </div>
-                        <div class="ads-banner">
-                            <img class="sq-advertize" src="assets/img/image17.png" />
-                            <img class="rect-advertize" src="assets/img/rect_ads_banner.svg" />
-                        </div>
-                        <div class="post-sub-content">
-                            <h2>What will Musk’s firm do?</h2>
-                            <p>So far, there has been no information about what Musk will do with his AI company. However, Musk’s opposition to OpenAI’s advancement has been evident for months, and he has spoken about the threat of AI on several occasions.
-
-                                In one of his earlier interviews to American TV host Tucker Carlson, Musk had said, “AI is more dangerous than, say, mismanaged aircraft design or production maintenance or bad car production.”</p>
+                        <div class="post-sub-content-wrapper">
+                            <div class="post-sub-content">
+                                <h2>The contradiction</h2>
+                                <p>Interestingly, the latest development comes close at heels with a recent open letter seeking a six-month halt on AI developments that was also signed by Elon Musk along with 1000 other dignitaries. Musk, along with other executives, had sought a halt on developing a more powerful AI than GPT-4, citing risks to society. The development related to Musk’s AI firm comes at a time when Alphabet Inc and Microsoft Corp are scrambling to integrate generative AI technology into their products and services. It also needs to be noted that even as ChatGPT gains wide-ranging use cases, it is also inviting pushback from several nations owing to privacy and a host of other issues.</p>
+                                <img class="feature-img" src="assets/img/image-D.png" />
+                            </div>
+                            <div class="ads-banner">
+                                <img class="sq-advertize" src="assets/img/image17.png" />
+                                <img class="rect-advertize" src="assets/img/rect_ads_banner.svg" />
+                            </div>
+                            <div class="post-sub-content">
+                                <h2>What will Musk’s firm do?</h2>
+                                <p>So far, there has been no information about what Musk will do with his AI company. However, Musk’s opposition to OpenAI’s advancement has been evident for months, and he has spoken about the threat of AI on several occasions.
+    
+                                    In one of his earlier interviews to American TV host Tucker Carlson, Musk had said, “AI is more dangerous than, say, mismanaged aircraft design or production maintenance or bad car production.”</p>
+                            </div>
                         </div>
                     </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const readMoreButtons = document.querySelectorAll('.read-more-button');
+                            readMoreButtons.forEach(function(button) {
+                                // button.addEventListener('click', function() {
+                                // const postSection = this.parentNode;
+                                // const postContent = postSection.querySelector('.post-content');
+                                // const postSubContentWrapper = postSection.querySelector('.post-sub-content-wrapper');
+
+                                // postContent.style.maxHeight = 'none';
+                                // postContent.style.overflow = 'visible';
+                                // postContent.style.textOverflow = 'initial';
+                                // postContent.style.whiteSpace = 'normal';
+                                // postContent.style.background = 'none';
+                                // postContent.style.webkitTextFillColor = '#555555';
+
+                                // postSubContentWrapper.style.display = 'block';
+                                
+                                // button.style.display = 'none';
+                                // });
+                                button.addEventListener('click', function() {
+                                    const postSection = this.parentNode;
+                                    const postContent = postSection.querySelector('.post-content');
+                                    const postSubContentWrapper = postSection.querySelector('.post-sub-content-wrapper');
+
+                                    postContent.style.maxHeight = 'none';
+                                    postContent.style.overflow = 'visible';
+                                    postContent.style.textOverflow = 'initial';
+                                    postContent.style.whiteSpace = 'normal';
+                                    postContent.style.background = 'none';
+                                    postContent.style.color = '#555555';
+                                    
+                                    const firstChar = postContent.textContent.trim().charAt(0);
+                                    postContent.innerHTML = `<span style="color: #0084FF">${firstChar}</span>${postContent.innerHTML.substr(1)}`;
+
+                                    postSubContentWrapper.style.display = 'block';
+
+                                    button.style.display = 'none';
+                                });
+                            });
+                        });
+
+                    </script>
                     <div class="sidebar-right">
                         <img class="square-advertize" src="assets/img/image17.png" alt="">
                         <div class="social-links-section">
