@@ -11,6 +11,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 html {
     scroll-behavior: smooth
 }
@@ -25,6 +26,11 @@ input {
 
 /* Your styles here */
 
+
+header {
+    padding: 20px 0;
+
+}
 
 .btn-solid {
     background: #0084FF;
@@ -73,12 +79,16 @@ input {
 
 .page-width {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 120px;
+
 }
 
 section {
     margin-bottom: 100px;
+
+    @media(max-width:768px) {
+        margin-bottom: 0px;
+    }
 }
 
 section h2 {
@@ -105,7 +115,6 @@ a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     gap: 15px;
 }
 
@@ -439,14 +448,60 @@ main {
     transform: rotate(90deg);
 }
 
+.category-bar-home::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.category-bar-home {
+    max-width: 100%;
+    gap: 32px;
+    padding: 14px 0px 14px 23px;
+    overflow: scroll;
+    display: none;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+
+    .category-block {
+        img {
+            max-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width:768px) {
+        display: flex;
+    }
+}
+
 
 /* first section  */
+
+.first-section {
+    margin-top: 40px;
+
+    @media (max-width:768px) {
+        margin-top: 0;
+    }
+}
 
 .first-section-main-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px 20px;
+    // padding: 25px 20px;
     gap: 34px;
+
+    @media (max-width:768px) {
+        padding: 0px 0px;
+    }
 }
 
 .first-section-column-a.main-image-banner {
@@ -722,10 +777,14 @@ img.image-banner-with-text-a-img {
     }
 }
 
-.trending-now-with-slider-content.slick-current .trending-now-with-slider-content-text p,
-.trending-now-with-slider-content.slick-current .trending-now-with-slider-content-text button {
-    font-size: 28px;
-    /* Adjust the font size to your preference */
+@media (min-width:769px) {
+
+    .trending-now-with-slider-content.slick-current .trending-now-with-slider-content-text p,
+    .trending-now-with-slider-content.slick-current .trending-now-with-slider-content-text button {
+        font-size: 28px;
+        transition: all 0.3s ease;
+        /* Adjust the font size to your preference */
+    }
 }
 
 .trending-now-with-slider-content-image img {
@@ -1719,7 +1778,8 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px;
+        height: 40px;
+        // padding: 12px;
     }
 
     .header-toggle {
