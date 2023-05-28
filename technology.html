@@ -515,42 +515,44 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <section class="eighth-section" id="international">
-            <div class="page-width eight-section-main-container">
-                <h2>International</h2>
-                <div class="international-with-slider">
-                    <div class="international-with-slider-content">
-                        <div class="international-with-slider-content-image">
-                            <img src="assets/img/Group14392.png" alt="">
+        <div class="tech-footer-slider">
+            <section class="eighth-section" id="international">
+                <div class="page-width eight-section-main-container">
+                    <h2>International</h2>
+                    <div class="international-with-slider">
+                        <div class="international-with-slider-content">
+                            <div class="international-with-slider-content-image">
+                                <img src="assets/img/Group14392.png" alt="">
+                            </div>
+                            <div class="international-with-slider-content-text">
+                                <button class="btn btn-solid">nutrition</button>
+                                <p>Which is better for you health: walking or running?</p>
+                            </div>
                         </div>
-                        <div class="international-with-slider-content-text">
-                            <button class="btn btn-solid">nutrition</button>
-                            <p>Which is better for you health: walking or running?</p>
+                        <div class="international-with-slider-content">
+                            <div class="international -with-slider-content-image">
+                                <img src="assets/img/Group14392.png" alt="">
+                            </div>
+                            <div class="international-with-slider-content-text">
+                                <button class="btn btn-solid">World</button>
+                                <p>Which is better for you health: walking or running?</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="international-with-slider-content">
-                        <div class="international -with-slider-content-image">
-                            <img src="assets/img/Group14392.png" alt="">
-                        </div>
-                        <div class="international-with-slider-content-text">
-                            <button class="btn btn-solid">World</button>
-                            <p>Which is better for you health: walking or running?</p>
-                        </div>
-                    </div>
-                    <div class="international-with-slider-content">
-                        <div class="international -with-slider-content-image">
-                            <img src="assets/img/Rectangle 135.png" alt="">
-                        </div>
-                        <div class="international-with-slider-content-text">
-                            <button class="btn btn-solid">Entertainment</button>
-                            <p>Which is better for you health: walking or running?</p>
+                        <div class="international-with-slider-content">
+                            <div class="international -with-slider-content-image">
+                                <img src="assets/img/Rectangle 135.png" alt="">
+                            </div>
+                            <div class="international-with-slider-content-text">
+                                <button class="btn btn-solid">Entertainment</button>
+                                <p>Which is better for you health: walking or running?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+    </main>
+    <footer class="tech-footer">
         <div class="page-width main-footer">
             <div class="footer-container-a  footer-logo-social">
                 <div class="footer-logo">
@@ -606,6 +608,31 @@
         </div>
     </footer>
     <script>
+    $(document).ready(function () {
+        $('.international-with-slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            speed: 500,
+            infinite: true,
+            autoplaySpeed: 4000,
+            autoplay: true,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }]
+        });
+    });
+    </script>
+    <script>
         $(document).ready(function () {
             $("#responsive-search-icon").click(function () {
                 $("#responsive-search-icon-open").slideDown();
@@ -615,11 +642,6 @@
                 $("#responsive-search-icon-open").slideUp();
             });
         });
-
-
-
-
-
         $(document).ready(function () {
             $(".header-toggle").click(function () {
                 $(".toggle-open").animate({

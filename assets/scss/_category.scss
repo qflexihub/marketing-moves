@@ -148,7 +148,17 @@
         }
     }
 }
-
-.eighth-section {
-    // position: absolute;
+.tech-footer {
+    z-index: -1;
+    padding-top: 50px;
+    @media (max-width: 768px){
+        padding-top: 175px;
+    }
+}
+.tech-footer-slider {
+    margin-bottom: -225px;
+    z-index: 999;
+    @media (max-width: 768px){
+        margin-bottom: -175px;
+    }
 }
