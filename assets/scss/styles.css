@@ -499,6 +499,21 @@
   }
 }
 
+.footer {
+  z-index: -1;
+  padding-top: 50px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 175px;
+  }
+}
+
+.footer-slider {
+  margin-bottom: -225px;
+  z-index: 999;
+}
+
 /* Global styles */
 body {
   background-color: #f8f8f8;
