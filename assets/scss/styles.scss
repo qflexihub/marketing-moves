@@ -212,6 +212,12 @@ nav.navbar {
     position: absolute;
     top: 48px;
     z-index: 1;
+
+    .dot {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+    }
 }
 
 a.dropdown-content:hover {
@@ -1491,6 +1497,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    align-items: baseline;
 }
 
 .footer-container-b.footer-weekly-newslatter ul li a {
@@ -1499,9 +1506,19 @@ footer {
     margin-right: 20px;
 }
 
+.footer-container-b.footer-weekly-newslatter ul li::marker {
+    font-size: 20px;
+}
+
+.footer-container-b.footer-weekly-newslatter ul li:first-child {
+    list-style-type: none;
+}
+
 .footer-container-b.footer-weekly-newslatter ul li {
-    padding: 8px 0;
+    padding: 8px 5px 8px 0;
     cursor: pointer;
+    list-style-type: disc;
+    color: #B3CDE0;
 }
 
 .footer-container-c p {
