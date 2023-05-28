@@ -3,6 +3,7 @@
     text-align: center;
     display: inline-block;
     max-width: 100%;
+    width: 100%;
     height: 300px;
 
     @media (max-width:768px) {
@@ -55,9 +56,10 @@
                 display: flex;
                 text-decoration: none;
                 gap: 14px;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 text-align: center;
+                padding-bottom: 12px;
 
                 li {
                     font-size: 18px;
@@ -84,7 +86,7 @@
         }
 
         .article-container {
-            margin-top: 50px;
+            margin-top: 30px;
 
             .article-card {
                 border: 1px solid #E2E2E2;
