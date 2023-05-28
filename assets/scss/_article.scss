@@ -281,14 +281,14 @@
         display: block;
     }
 }
-.footer {
+.article-footer {
     z-index: -1;
     padding-top: 50px;
     @media (max-width: 768px){
         padding-top: 175px;
     }
 }
-.footer-slider {
+.article-footer-slider {
     margin-bottom: -225px;
     z-index: 999;
 }
