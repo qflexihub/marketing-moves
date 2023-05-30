@@ -452,20 +452,63 @@
                 </div>
             </div>
         </section>
+
         <section class="second-section" id="trending-now">
             <div class="second-section-main-container">
                 <div class="trending-block">
                     <img src="assets/img/trending-arrow.svg" alt="">
                     <h2>Trending <br /> Now</h2>
                 </div>
-                <div class="trending-now-with-slider">
+                <div class="slick-slider-trending">
                     <div class="trending-now-with-slider-content">
                         <div class="trending-now-with-slider-content-image">
                             <img src="assets/img/image-13.png" alt="">
                         </div>
                         <div class="trending-now-with-slider-content-text">
                             <button class="btn btn-solid">nutrition</button>
-                            <p>Which is better for you health: walking or running?</p>
+                            <p>India-France Business Summit: India offers scale, speed, skills to world, says Piyush
+                                Goyal</p>
+                        </div>
+                    </div>
+                    <div class="trending-now-with-slider-content">
+                        <div class="trending-now-with-slider-content-image">
+                            <img src="assets/img/image-13(1).png" alt="">
+                        </div>
+                        <div class="trending-now-with-slider-content-text">
+                            <button class="btn btn-solid">World</button>
+                            <p>India-France Business Summit: India offers scale, speed, skills to world, says Piyush
+                                Goyal</p>
+                        </div>
+                    </div>
+                    <div class="trending-now-with-slider-content">
+                        <div class="trending-now-with-slider-content-image">
+                            <img src="assets/img/image-13(2).png" alt="">
+                        </div>
+                        <div class="trending-now-with-slider-content-text">
+                            <button class="btn btn-solid">Entertainment</button>
+                            <p>India-France Business Summit: India offers scale, speed, skills to world, says Piyush
+                                Goyal</p>
+                        </div>
+                    </div>
+                    <div class="trending-now-with-slider-content">
+                        <div class="trending-now-with-slider-content-image">
+                            <img src="assets/img/image-13(2).png" alt="">
+                        </div>
+                        <div class="trending-now-with-slider-content-text">
+                            <button class="btn btn-solid">Click me</button>
+                            <p>India-France Business Summit: India offers scale, speed, skills to world, says Piyush
+                                Goyal</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="trending-now-with-slider">
+                    <div class="trending-now-with-slider-content">
+                        <div class="trending-now-with-slider-content-image">
+                            <img src="assets/img/image-13.png" alt="">
+                        </div>
+                        <div class="trending-now-with-slider-content-text">
+                            <button class="btn btn-solid">nutrition</button>
+                            <p>India-France Business Summit: India offers scale, speed, skills to world, says Piyush Goyal</p>
                         </div>
                     </div>
                     <div class="trending-now-with-slider-content">
@@ -495,7 +538,7 @@
                             <p>Which is better for you health: walking or running?</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="third-section" id="campaign-coverage">
@@ -863,6 +906,36 @@
         </div>
     </footer>
     <script>
+        // const swiper = new Swiper('.trending-now-with-slider', {
+        //     centeredSlides: false,
+        //     loop: true,
+        //     speed: 500,
+        //     slidesPerView: 1.5,
+        //     spaceBetween: 40,
+        //     // autoplay: {
+        //     //     delay: 3000,
+        //     // },
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        // breakpoints: {
+
+        //     640: {
+        //         slidesPerView: 2.5,
+        //     },
+        //     768: {
+        //         slidesPerView: 2.75,
+        //     },
+        //     1080: {
+        //         slidesPerView: 3.25,
+        //     },
+        //     1280: {
+        //         slidesPerView: 3.75,
+        //     },
+        // },
+        // });
+
         $(document).ready(function () {
             $('.image-banner-with-slider').slick({
                 slidesToShow: 3,
@@ -871,7 +944,7 @@
                 prevArrow: '<div class="slick-custom-arrow slick-custom-arrow-left"><i class="fa-solid fa-angle-left"></i></div>',
                 dots: false,
                 speed: 500,
-                infinite: true,
+                infinite: false,
                 autoplaySpeed: 4000,
                 autoplay: false,
                 responsive: [{
@@ -896,19 +969,22 @@
             });
         });
         $(document).ready(function () {
-            $('.trending-now-with-slider').slick({
-                slidesToShow: 3,
+            $('.slick-slider-trending').slick({
+                centerMode: false,
+                slidesToShow: 3.5,
                 slidesToScroll: 1,
-                arrows: true,
-                dots: false,
                 speed: 500,
+                dots: false,
+                arrows: true,
+                swipe: true,
                 infinite: true,
+                swipeToSlide: true,
                 autoplaySpeed: 4000,
-                autoplay: true,
+                autoplay: false,
                 responsive: [{
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                     }
                 }, {
                     breakpoint: 576,
@@ -919,6 +995,34 @@
                 }]
             });
         });
+
+        // $(document).ready(function () {
+        //     $('.trending-now-with-slider').slick({
+        //         slidesToShow: 3.5,
+        //         centerMode: false,
+        //         // slidesToScroll: 1,
+        //         spaceBetween: 40,
+        //         arrows: true,
+        //         dots: false,
+        //         speed: 500,
+        //         infinite: true,
+        //         autoplaySpeed: 4000,
+        //         swipeToSlide: true,
+        //         autoplay: false,
+        //         responsive: [{
+        //             breakpoint: 768,
+        //             settings: {
+        //                 slidesToShow: 3,
+        //             }
+        //         }, {
+        //             breakpoint: 576,
+        //             settings: {
+        //                 slidesToShow: 1,
+        //                 dots: true,
+        //             }
+        //         }]
+        //     });
+        // });
         $(document).ready(function () {
             $('.event-with-slider').slick({
                 slidesToShow: 3,
