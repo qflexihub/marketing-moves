@@ -47,6 +47,7 @@
         max-width: 70%;
 
         @media (max-width:768px) {
+            padding-top: 10px;
             max-width: 100%;
         }
 
@@ -156,6 +157,7 @@
     }
 }
 .tech-footer-slider {
+    margin-top: 35px;
     margin-bottom: -225px;
     z-index: 999;
     @media (max-width: 768px){
