@@ -132,6 +132,7 @@
                 </div>
                 <div class="responsive-search-bar">
                     <a id="responsive-search-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a id="responsive-cross--drawer-icon" href="#" style="display: none;"><i class="fa-solid fa-xmark"></i></a>
                     <div id="responsive-search-icon-open" class="responsive-header-search-bar-box">
                         <div class="responsive-header-search-bar-box-email">
                             <input type="text" placeholder="Search...">
@@ -645,6 +646,16 @@
             $("#responsive-cross-icon").click(function () {
                 $("#responsive-search-icon-open").slideUp();
             });
+            $("#responsive-cross--drawer-icon").click(function () {
+                $(".toggle-open").animate({
+                    width: "toggle"
+                });
+                $("body").removeClass("menu-main-body");
+                $(".header-toggle").css("display", "flex");
+                $("#responsive-cross--drawer-icon").hide();
+                $("#responsive-search-icon").show();
+                $(".resposive-header-logo").css("text-align", "center");
+            });
         });
         $(document).ready(function () {
             $(".header-toggle").click(function () {
@@ -654,8 +665,16 @@
 
                 if ($("body").hasClass("menu-main-body")) {
                     $("body").removeClass("menu-main-body");
+                    $(".header-toggle").css("display", "flex");
+                    $("#responsive-cross--drawer-icon").hide();
+                    $("#responsive-search-icon").show();
+                    $(".resposive-header-logo").css("text-align", "center");
                 } else {
                     $("body").addClass("menu-main-body");
+                    $(".header-toggle").css("display", "none");
+                    $("#responsive-cross--drawer-icon").show();
+                    $("#responsive-search-icon").hide();
+                    $(".resposive-header-logo").css("text-align", "start");
                 }
             });
             $(".toggle-dropdown-content").click(function () {
