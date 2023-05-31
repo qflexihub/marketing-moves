@@ -858,6 +858,7 @@ a#responsive-cross-icon i {
 
 /* toggle  */
 .toggle-open {
+  display: none;
   position: absolute;
   width: 100%;
   top: 0;
@@ -866,6 +867,11 @@ a#responsive-cross-icon i {
   overflow-y: scroll;
   background: #0084FF;
 }
+@media (max-width: 768px) {
+  .toggle-open {
+    display: block;
+  }
+}
 
 .toggle-dropdown-content-1 {
   background: white;
@@ -873,6 +879,10 @@ a#responsive-cross-icon i {
   border-radius: 0 15px 15px 0;
   height: 100%;
   overflow-y: scroll;
+  padding: 15px;
+}
+.toggle-dropdown-content-1 i {
+  color: #0084FF;
 }
 
 .toggle-dropdown-content-1::-webkit-scrollbar {
@@ -926,7 +936,7 @@ main {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   padding: 7px 7px 7px 0;
   font-weight: bold;
   flex-wrap: wrap;
