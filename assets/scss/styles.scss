@@ -944,6 +944,7 @@ img.image-banner-with-text-a-img {
         height: 500px;
         justify-content: center;
         width: 100%;
+        // margin-left: -124px;
 
         @media (max-width:768px) {
             height: auto !important;
@@ -2631,5 +2632,14 @@ footer {
 
     @media (max-width: 768px) {
         margin-bottom: -136px;
+    }
+}
+
+.slick-slider-trending {
+    .slick-slide[tabindex="-1"] {
+        // visibility: hidden !important;
+        // width: 480px !important;
+        // height: 480px !important;
+
     }
 }

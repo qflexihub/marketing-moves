@@ -519,6 +519,16 @@
                                 Goyal</p>
                         </div>
                     </div>
+                    <div class="trending-now-with-slider-content">
+                        <div class="trending-now-with-slider-content-image">
+                            <img src="assets/img/image-13.png" alt="">
+                        </div>
+                        <div class="trending-now-with-slider-content-text">
+                            <button class="btn btn-solid">nutrition</button>
+                            <p>India-France Business Summit: India offers scale, speed, skills to world, says Piyush
+                                Goyal</p>
+                        </div>
+                    </div>
                 </div>
                 <!-- <div class="trending-now-with-slider">
                     <div class="trending-now-with-slider-content">
@@ -1147,7 +1157,7 @@
         $(document).ready(function () {
             $('.slick-slider-trending').slick({
                 centerMode: false,
-                slidesToShow: 3,
+                slidesToShow: 3.5,
                 slidesToScroll: 1,
                 // speed:100,
                 dots: false,
@@ -1158,7 +1168,7 @@
                 autoplay: false,
                 nextArrow: $('.next-button'),
                 prevArrow: $('.prev-button'),
-                variableWidth: true,
+                variableWidth: false,
                 waitForAnimate: false,
 
 
@@ -1175,6 +1185,7 @@
                     }
                 }]
             });
+
         });
         $(document).ready(function () {
             $("#responsive-search-icon").click(function () {
