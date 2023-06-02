@@ -355,7 +355,7 @@ a#responsive-cross-icon i {
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: 5;
+    z-index: 999;
     height: 100vh;
     overflow-y: scroll;
     background: #0084FF;
@@ -1166,6 +1166,14 @@ img.image-banner-with-text-a-img {
     padding: 40px 0;
     align-items: end;
 
+    .slick-list {
+        margin: 0 -10px;
+
+        @media(max-width:600px) {
+            margin: 0;
+        }
+    }
+
     @media(max-width:600px) {
         padding: 14px 0;
     }
@@ -1179,15 +1187,14 @@ img.image-banner-with-text-a-img {
 .campaign-coverage-with-slider-content {
     width: 33%;
     background: white;
-    margin-right: 15px;
     border-radius: 12px;
     box-shadow: 0 0 10px #ddd;
     border: 1px solid #80808045;
+    margin: 0px 7.5px;
 
     @media(max-width:600px) {
         max-width: 222px !important;
         width: 100%;
-        margin-right: 10px;
     }
 }
 
@@ -1412,7 +1419,7 @@ a.fifth-section-heading-navbar-link.active {
     justify-content: space-between;
     border-bottom: 3px solid #0084FF;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
     @media(max-width:1240px) {
         gap: 20px
@@ -1451,7 +1458,7 @@ a.fifth-section-heading-navbar-link.active {
 .latest-news-main-container-a-main-news-img,
 .latest-news-main-container-a-main-news-text {
     padding-right: 10px;
-    margin-top: 24px;
+    // margin-top: 24px;
 
     @media(max-width:768px) {
         margin-top: 0 !important;
@@ -1478,8 +1485,8 @@ a.fifth-section-heading-navbar-link.active {
 }
 
 .latest-news-main-container-a-main-news-text h4 {
-    margin: 0px;
-    font-size: 17px;
+    margin: 24px 0px 12px 0px;
+    font-size: 18px;
     color: #0084FF;
 
     @media(max-width:768px) {
@@ -1728,7 +1735,7 @@ a.fifth-section-heading-navbar-link.active {
     @media(max-width:768px) {
         margin-right: 10px;
         width: 222px !important;
-        height: 222px !important;
+        // height: 222px !important;
     }
 }
 
@@ -1857,6 +1864,10 @@ a.fifth-section-heading-navbar-link.active {
     background: white;
     margin-right: 17px;
     border-radius: 12px;
+
+    @media(max-width:768px) {
+        margin-right: 0px;
+    }
 }
 
 .international-with-slider-content-text button {
